@@ -1,19 +1,24 @@
-@extends('adminlte::page')
 
-@section('title', 'ETA')
-
-@section('content_header')
-    <h1>ETA HANS ROTH</h1>
-@stop
+@extends('layouts.app')
 
 @section('content')
-    <p>BIENVENIDOS A ETA HANS ROTH FE Y ALEGRIA</p>
-@stop
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
 
-@section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
-@stop
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-@section('js')
-    <script> console.log('Hi!'); </script>
-@stop
+                    {{ __('You are logged in!') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

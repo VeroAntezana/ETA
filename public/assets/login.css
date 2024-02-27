@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(120deg, rgb(255, 255, 255) 50%, rgb(255 255 255) 50%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.imagen{
+    width: 500px;
+    height: 500px;
+    padding: 0px;
+    border: 0px;
+}
+
+.imagen img {
+    width: 500px;
+    height: 500px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.contenedorFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px ;
+    width: 500px;
+    height: 500px;
+    gap: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.contenedorFormulario .titulologin{
+    width: 250px;
+    height: 30px;
+    position: relative;
+    top: -31%;
+}
+
+.contenedorFormulario .titulologin img{
+    width: 100%;
+	margin: auto;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input {
+
+    width: 350px;
+    height: 35px;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: black 1px solid;
+    font-size: 17px;
+}
+
+.formulario input::placeholder {
+    color: black;
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+input:focus {
+    outline: none;
+}
+
+.contenedorBotones{
+    display: flex;
+    gap: 70px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.botones{
+    color: black;
+    background-color: transparent;
+    border: solid 1px black;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 7px 27px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botones:hover{
+    color: rgb(84, 84, 84);
+    background-color: black;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.restablecerPassword{
+    cursor: pointer;
+}
+
+.contenedorImg2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.imagen2{
+    position: absolute;
+    top: 0px;
+    width: 100px;
+    height: auto;
+}
